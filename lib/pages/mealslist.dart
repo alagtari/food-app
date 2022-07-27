@@ -128,7 +128,7 @@ class MealslistPageState extends State<MealslistPage> {
                                   width: 15,
                                 ),
                                 Text(
-                                  '\$12.00',
+                                  '\$2.00',
                                   style: TextStyle(
                                     fontFamily: 'lato',
                                     color: Color.fromARGB(255, 101, 101, 101),
@@ -169,7 +169,7 @@ class MealslistPageState extends State<MealslistPage> {
                       color: Color.fromARGB(255, 29, 31, 33),
                     ),
                     child: Image.asset(
-                      "assets/burger.png",
+                      "assets/pasta.png",
                       width: 65,
                       height: 65,
                     ),
@@ -182,7 +182,7 @@ class MealslistPageState extends State<MealslistPage> {
                           Row(
                             children: [
                               Text(
-                                'Burger ',
+                                'Pasta ',
                                 style: TextStyle(
                                     fontFamily: 'lato',
                                     color: Colors.grey,
@@ -263,7 +263,7 @@ class MealslistPageState extends State<MealslistPage> {
                       color: Color.fromARGB(255, 29, 31, 33),
                     ),
                     child: Image.asset(
-                      "assets/burger.png",
+                      "assets/paneer.png",
                       width: 65,
                       height: 65,
                     ),
@@ -276,7 +276,7 @@ class MealslistPageState extends State<MealslistPage> {
                           Row(
                             children: [
                               Text(
-                                'Burger ',
+                                'Chili paneer ',
                                 style: TextStyle(
                                     fontFamily: 'lato',
                                     color: Colors.grey,
@@ -309,14 +309,14 @@ class MealslistPageState extends State<MealslistPage> {
                                   color: Colors.orange,
                                 ),
                                 Icon(
-                                  Icons.star_border,
+                                  Icons.star_half_outlined,
                                   color: Colors.orange,
                                 ),
                                 SizedBox(
                                   width: 15,
                                 ),
                                 Text(
-                                  '\$12.00',
+                                  '\$10.00',
                                   style: TextStyle(
                                     fontFamily: 'lato',
                                     color: Color.fromARGB(255, 101, 101, 101),
@@ -334,97 +334,6 @@ class MealslistPageState extends State<MealslistPage> {
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.025,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(25),
-                ),
-                color: Colors.white,
-              ),
-              width: MediaQuery.of(context).size.width * 0.85,
-              height: 100,
-              child: Row(
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(left: 20.0, right: 20.0),
-                    height: 70,
-                    width: 70,
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10),
-                      ),
-                      color: Color.fromARGB(255, 29, 31, 33),
-                    ),
-                    child: Image.asset(
-                      "assets/burger.png",
-                      width: 65,
-                      height: 65,
-                    ),
-                  ),
-                  Expanded(
-                      flex: 2,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Row(
-                            children: [
-                              Text(
-                                'Burger ',
-                                style: TextStyle(
-                                    fontFamily: 'lato',
-                                    color: Colors.grey,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          SizedBox(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orange,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orange,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orange,
-                                ),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.orange,
-                                ),
-                                Icon(
-                                  Icons.star_border,
-                                  color: Colors.orange,
-                                ),
-                                SizedBox(
-                                  width: 15,
-                                ),
-                                Text(
-                                  '\$12.00',
-                                  style: TextStyle(
-                                    fontFamily: 'lato',
-                                    color: Color.fromARGB(255, 101, 101, 101),
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w900,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      )),
-                ],
-              ),
             ),
           ],
         ),

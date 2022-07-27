@@ -241,15 +241,27 @@ class LoginPageState extends State<LoginPage> {
                       Radius.circular(12.0),
                     ),
                   ),
-                  child: const Center(
-                      child: Text(
-                    'Sign in with Google',
-                    style: TextStyle(
-                        fontFamily: 'lato',
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 17),
-                  )),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        "assets/google.png",
+                        width: 25,
+                        height: 25,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        'Sign in with Google',
+                        style: TextStyle(
+                            fontFamily: 'lato',
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 17),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),

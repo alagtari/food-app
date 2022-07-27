@@ -50,35 +50,45 @@ class MealPageState extends State<MealPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(25),
-                          ),
-                          color: Color.fromARGB(255, 29, 31, 33),
-                        ),
-                        width: 70,
-                        height: 40,
-                        child: Row(
-                          children: [
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Icon(
-                              Icons.star,
-                              color: Colors.orange,
-                            ),
-                            Text(
-                              '4,5',
-                              style: TextStyle(
-                                fontFamily: 'lato',
-                                color: Color.fromARGB(239, 255, 255, 255),
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(25),
                               ),
-                            )
-                          ],
-                        ),
+                              color: Color.fromARGB(255, 29, 31, 33),
+                            ),
+                            width: 70,
+                            height: 40,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.orange,
+                                ),
+                                Text(
+                                  '4,5',
+                                  style: TextStyle(
+                                    fontFamily: 'lato',
+                                    color: Color.fromARGB(239, 255, 255, 255),
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: MediaQuery.of(context).size.width*0.55,),
+                          Icon(
+                            Icons.favorite_border,
+                            color: Color.fromARGB(255, 78, 78, 78),
+                            size: 30,
+                            ),
+                        ],
                       ),
                       const SizedBox(height: 20),
                       const Text(
@@ -179,9 +189,9 @@ class MealPageState extends State<MealPage> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "assets/catchop.png",
+                              "assets/frise.png",
                               width: 60,
-                              height: 90,
+                              height: 110,
                             ),
                             Container(
                               height: 70,
@@ -228,7 +238,7 @@ class MealPageState extends State<MealPage> {
                         child: Row(
                           children: [
                             Image.asset(
-                              "assets/catchop.png",
+                              "assets/juse.png",
                               width: 60,
                               height: 90,
                             ),
@@ -300,7 +310,6 @@ class MealPageState extends State<MealPage> {
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                           
                             Text(
                               '\$34.00',
                               style: TextStyle(

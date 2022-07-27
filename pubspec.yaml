@@ -68,7 +68,9 @@ flutter:
      - assets/pizzahut.png
      - assets/burgerking.png
      - assets/papajhons.png
-
+     - assets/google.png
+     - assets/juse.png
+     - assets/frise.png
 
 
   #   - images/a_dot_ham.jpeg

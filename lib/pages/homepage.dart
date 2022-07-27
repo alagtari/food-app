@@ -38,14 +38,25 @@ class HomepagePageState extends State<HomepagePage> {
                   SizedBox(
                     height: 5,
                   ),
-                  Text(
-                    'Welcome back!',
-                    style: TextStyle(
-                      fontFamily: 'lato',
-                      fontSize: 27,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'Welcome back!',
+                          style: TextStyle(
+                            fontFamily: 'lato',
+                            fontSize: 27,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      Icon(
+                        Icons.shopping_cart_outlined,
+                        color: Colors.grey,
+                        size: 30.0,
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),
@@ -451,6 +462,13 @@ class HomepagePageState extends State<HomepagePage> {
                                     fontSize: 20,
                                     fontWeight: FontWeight.w700),
                               ),
+                              SizedBox(
+                                width: 110,
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
                             ],
                           ),
                           SizedBox(
@@ -484,7 +502,7 @@ class HomepagePageState extends State<HomepagePage> {
                                   width: 20,
                                 ),
                                 Text(
-                                  '\$12.00',
+                                  '\$2.00',
                                   style: TextStyle(
                                     fontFamily: 'lato',
                                     color: Color.fromARGB(255, 101, 101, 101),
@@ -494,18 +512,6 @@ class HomepagePageState extends State<HomepagePage> {
                                 ),
                               ],
                             ),
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                '2,4 km',
-                                style: TextStyle(
-                                    fontFamily: 'lato',
-                                    color: Colors.grey,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                            ],
                           ),
                         ],
                       )),
